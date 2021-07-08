@@ -1,0 +1,36 @@
+/*  
+    Autor: Pablo Damian Romero
+    Legajo: FAI-1652 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#pagPolitica{
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    background-color: #ababab8c;
+}
+
+#pagPolitica ol{
+    padding: 15px 80px;
+    background-color: #ffffff3d;
+}
+
+#pagPolitica ul li{
+    font-family: monospace;
+    font-size: 12px;
+    list-style: disc;
+}
+
+#pagPolitica h4, h5{
+    padding: 10px 0;
+}
+
+#pagPolitica p{
+    font-family: math;
+    font-weight: normal;
+    font-size: 17px;
+}

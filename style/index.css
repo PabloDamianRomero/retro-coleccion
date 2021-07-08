@@ -1,0 +1,70 @@
+/*  
+    Autor: Pablo Damian Romero
+    Legajo: FAI-1652 
+*/
+
+.sombraDelContenedor{
+    width: 1280px;
+    margin: 0 auto;
+    box-shadow: 0 0 14px #000000;
+}
+
+#contenedorCentral{
+    background-color: rgb(214 214 214);
+    background-image: url(../img/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1280px;
+    margin: 0 auto;
+    height: 757px;
+    position: relative;
+}
+
+#contenedorCentral h1{
+    font-family: 'Lobster', serif, cursive;
+    font-size: 6em;
+    color: #fff;
+    text-shadow: 4px 3px #0009;
+    text-decoration: underline;
+    position: absolute;
+    top: 24px;
+    left: 85px;
+    z-index: 1;
+}
+
+
+#contenedorCentral img{
+    width: 1070px;
+    position: absolute;
+    top: 50px;
+}
+
+.parrafoBienvenida{
+    position: absolute;
+    top: 188px;
+    padding: 25px 130px;
+    background-color: #ffffff8f;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.parrafoBienvenida .refPagina {
+    text-shadow: 0 0 3px rgb(0 172 224);
+    color: rgb(226 242 247);
+}
+
+.parrafoBienvenida .refContacto {
+    text-shadow: 0 0 3px rgb(17 154 15);
+    color: rgb(158 230 157);
+}
+
+#contenedorCentral p{
+    font-size: 26px;
+    color: #1d1d1d;
+    margin-bottom: 35px;
+    font-family: sans-serif;
+    text-align: center;
+    font-stretch: semi-condensed;
+    text-shadow: 0 0 3px #fff;
+}
+

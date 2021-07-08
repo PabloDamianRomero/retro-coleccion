@@ -1,0 +1,249 @@
+<!--
+  Autor: Pablo Damian Romero
+  Legajo: FAI-1652
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/gral.css">
+    <link rel="stylesheet" href="style/contenedorCentral2.css">
+    <link rel="stylesheet" href="style/contacto.css">
+    <link rel="shortcut icon" href="img/fav.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Retro Colección - Contacto</title>
+</head>
+
+<body>
+    <div id="contenedorGral">
+        <div class="cabecera">
+            <div class="barraSuperior">
+                <div id="logoBarraSuperior" onclick="goToIndex();"></div>
+                <div class="enlacesLista">
+                    <ul>
+                        <li><a href="informacion.html">Informaci&oacute;n</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="video.html">Video</a></li>
+                        <li><a href="conceptos.html">Conceptos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <div id="carrito"></div>
+                </div><!-- Cierre enlacesLista -->
+            </div><!-- Cierre barraSuperior -->
+        </div><!-- Cierre cabecera -->
+
+            <div id="contenedorCentral2">
+                <div id="pagContacto">
+                    <div class="contenedorInterno">
+                        <div id="cuadroFormulario">
+                            <img src="img/search-solid.svg" alt="lupa" width="150">
+                            <h2>¿No encuentra lo que busca?</h2>
+                            <h4>Podemos ayudarle a encontrar el producto adecuado</h4>
+                            <p>Cuéntenos qué es lo que busca debajo. Le ayudaremos con gusto a encontrarlo.</p>
+                            <p id="campoObligatorio">Los campos con <sup>*</sup> son obligatorios</p>
+                            <form action="#" id="formulario" method="POST">
+                                <table id="tablaFormulario">
+                                    <tr>
+                                        <td>
+                                            <div class="formularioGrupo" id="grupo_nombre">Su nombre<sup>*</sup><br>
+                                                <input type="text" class="formulario__input" id="iNom"
+                                                    placeholder="Ingrese su nombre" size="45" maxlength="20"
+                                                    autocomplete="off">
+                                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                                <span class="pRequisito">El nombre debe ser de 4 a 20 caracteres y solo
+                                                    puede contener letras.</span>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="formularioGrupo" id="grupo_apellido">Su apellido<sup>*</sup><br>
+                                                <input type="text" class="formulario__input" id="iApe"
+                                                    placeholder="Ingrese su apellido" size="45" maxlength="20"
+                                                    autocomplete="off" />
+                                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                                <span class="pRequisito">El apellido debe ser de 4 a 20 caracteres y
+                                                    solo puede contener letras.</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div id="margenMetodoContacto">
+                                                Método de contacto
+                                                <select name="metodoContacto" id="opcionesContacto">
+                                                    <option value="op0">-- Seleccione una opción --</option>
+                                                    <option value="op1">Teléfono Fijo</option>
+                                                    <option value="op2">Teléfono Celular</option>
+                                                    <option value="op3">Correo Electrónico</option>
+                                                </select>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="formularioGrupo" id="grupo_metodoContacto">
+                                                &nbsp;<sup>*</sup><br>
+                                                <!-- no borrar comentario (utilizado al recorrer DOM)-->
+                                                <input type="text" class="formulario__input" size="45" maxlength="40"
+                                                    autocomplete="off" id="metContactoInput" value="" disabled/>
+                                                <input type="text" class="formulario__input" size="45" maxlength="40"
+                                                    autocomplete="off" id="metContactoInput1"
+                                                    placeholder="Ingrese su número de teléfono fijo" />
+                                                <input type="text" class="formulario__input" size="45" maxlength="40"
+                                                    autocomplete="off" id="metContactoInput2"
+                                                    placeholder="Ingrese su número de teléfono celular" />
+                                                <input type="text" class="formulario__input" size="45" maxlength="40"
+                                                    autocomplete="off" id="metContactoInput3"
+                                                    placeholder="Ingrese su dirección de correo electrónico" />
+                                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                                <span class="pRequisito2" id="reqTelFijo">El número de teléfono debe
+                                                    contener 7 dígitos. Ej: 4481263</span>
+                                                <div class="pRequisito2" id="reqNumCel">Formato del número de celular.
+                                                    Ej: 542995055090
+                                                    <ul>
+                                                        <li>Valores opcionales:</li>
+                                                        <li>
+                                                            <ul>
+                                                                <li>El prefijo internacional (54) sin parentesis</li>
+                                                                <li>El prefijo internacional para celulares (9) sin parentesis</li>
+                                                                <li>El prefijo de acceso a interurbanas (0) sin parentesis</li>
+                                                                <li>El prefijo local para celulares (15) sin parentesis</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul>
+                                                        <li>Obligatorio:</li>
+                                                        <li>
+                                                            <ul>
+                                                                <li>El código de área (11, 2xx, 2xxx, 3xx, 3xxx, 6xx y 8xx) (no toma como válido un número local sin código de área como 4444-0000)</li>
+                                                            </ul>
+                                                    </li>
+                                                    </ul>
+                                                </div>
+                                                <span class="pRequisito2" id="reqDirMail">El correo solo puede contener
+                                                    letras, números, puntos, guiones y guión bajo</span>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr id="tr3">
+                                        <td>
+
+                                            Ha realizado ya alguna compra?<br>
+                                            <div id="seleccionCompra">
+                                                Si <input type="radio" name="compra" id="compraSi">
+                                                No <input type="radio" name="compra" id="compraNo">
+                                            </div>
+                                            <span class="mensajeAlentador">
+                                                Si selecciona que si, tendrá la oportunidad de ingresar a la lista de
+                                                clientes con posibles
+                                                descuentos :)
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="formularioGrupo" id="grupo_compras">
+                                                ¿En qué fecha realizó la última compra?<sup></sup><br>
+                                                <input type="text" class="formulario__input" size="45" maxlength="10"
+                                                    autocomplete="off" id="iFecha" placeholder="dd/mm/aaaa" />
+                                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                                <span class="pRequisito">Solo se pueden ingresar valores numéricos con
+                                                    el formato: dd/mm/aaaa (barra '/' incluída)</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr id="tr4">
+                                        <td>
+                                            <div class="formularioGrupo" id="grupo_cantidadProductos">
+                                                ¿Cantidad de productos comprados?<sup></sup><br>
+                                                <input type="text" class="formulario__input" size="45" maxlength="2"
+                                                    autocomplete="off" id="iCantProd"
+                                                    placeholder="Ingrese una cantidad" />
+                                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                                <span class="pRequisito">La cantidad debe ser un valor numerico y mayor
+                                                    a cero</span>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="formularioGrupo" id="grupo_precioProductos">
+                                                Precio total de la última compra<sup></sup><br>
+                                                <input type="text" class="formulario__input" size="45" maxlength="40"
+                                                    autocomplete="off" id="iPrecioProd"
+                                                    placeholder="Ingrese valor de compra" />
+                                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                                <span class="pRequisito">El valor debe ser numérico y separado con un
+                                                    punto en la parte decimal. La parte decimal debe ser de 2 dígitos. Ej: 10.00 o 2500.99</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" id="rellenoTopTextArea">
+                                            <div class="formularioGrupo" id="grupo_descripcion">
+                                                Descripción<sup>*</sup><br>
+                                                <textarea rows="5" cols="40" id="iTextArea" class="formulario__input" autocomplete="off"
+                                                    placeholder="Por favor, describa los detalles de lo que está buscando, como su nombre, marca, modelo, color o tamaño. O si lo desea, puede dejarnos alguna sugerencia"></textarea>
+                                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                                    <span class="pRequisito">La descripcion no puede quedar vacía.</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><input type="submit" id="iEnviar" >
+                                            <input type="reset" value="Cancelar" id="iCancelar" onclick="reestablecerFormulario();">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div id="exitoDelFormulario"><p>El formulario ha sido enviado</p></div>
+                                            <div id="fracasoDelFormulario"><p>Error al enviar. Revise los campos e intente nuevamente</p></div>
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                            </form>
+                        </div><!-- Cierre cuadroFormulario -->
+                        <div id="subirPagina" onclick="scrollUp();"></div>
+                    </div><!-- Cierre contenedorInterno -->
+                </div><!-- Cierre pagContacto -->
+            </div><!-- Cierre contenedorCentral2 -->
+
+
+            <div id="pie">
+                <div class="contenedorPie">
+                    <div id="logoPie" onclick="goToIndex();"></div>
+                    <p id="copy">&copy; Retro Colección 2021 - Todos los derechos reservados</p>
+                    <div class="pieEnlaces">
+                        <p>Sitios:</p>
+                        <ul>
+                            <li><a href="informacion.html">Informaci&oacute;n</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="video.html">Video</a></li>
+                            <li><a href="conceptos.html">Conceptos</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                        <div class="redes" onclick="irARedes();"></div>
+                    </div>
+                    <div id="politica">
+                        <p>Otros:</p>
+                        <ul>
+                            <li><a href="politicas.html">Política de privacidad</a></li>
+                            <li><a href="https://www.w3.org/" target="_blank">Sitio validado según W3C</a></li>
+                        </ul>
+                    </div>
+                </div><!-- Cierre contenedorPie -->
+            </div><!-- Cierre pie -->
+        </div><!-- Cierre contenedorGral -->
+
+        <script src="js/script.js"></script>
+        <script src="js/formulario.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

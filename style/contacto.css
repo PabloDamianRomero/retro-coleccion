@@ -1,0 +1,273 @@
+/*  
+    Autor: Pablo Damian Romero
+    Legajo: FAI-1652 
+*/
+
+#pagContacto {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+sup {
+  color: #a900ff;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+#cuadroFormulario {
+  background-color: #fff;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+#cuadroFormulario img {
+  margin: 0 auto;
+  padding: 65px 0 0 0;
+  display: block;
+}
+
+#cuadroFormulario h2 {
+  margin: 0 auto;
+  width: fit-content;
+  color: #000;
+  padding: 15px 0 5px 0;
+}
+
+#cuadroFormulario h4 {
+  width: fit-content;
+  margin: 0 auto;
+  color: #7d7d7d9e;
+}
+
+#cuadroFormulario p {
+  margin: 0 auto;
+  padding: 0;
+  width: fit-content;
+  padding: 25px 0 15px 0;
+}
+
+p#campoObligatorio {
+  margin-left: 200px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #545454c7;
+  font-style: italic;
+}
+
+#cuadroFormulario form {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#tablaFormulario {
+  width: 780px;
+  border-top: 1px dotted #696969ba;
+  padding-top: 10px;
+}
+
+#tablaFormulario td {
+  padding: 10px 10px;
+  font-weight: bold;
+}
+
+#tablaFormulario input,
+textarea {
+  margin: 10px 0;
+  border: 1px solid #696969ba;
+  border-radius: 10px;
+  box-shadow: 1px 1px 7px #00000038;
+}
+
+#tablaFormulario input {
+  height: 30px;
+  padding: 0 10px;
+}
+
+#margenMetodoContacto {
+  position: absolute;
+  top: 660px;
+}
+
+select#opcionesContacto {
+  padding: 0 5px;
+  border: 1px solid #696969ba;
+  box-shadow: 1px 1px 7px #00000038;
+  margin-left: 10px;
+  color: #676767;
+}
+
+#metContactoInput1,
+#metContactoInput2,
+#metContactoInput3 {
+  display: none;
+}
+
+#tablaFormulario textarea {
+  padding: 10px 35px;
+  width: 700px;
+  height: 125px;
+  resize: none;
+}
+
+input#iEnviar {
+  background-color: #60bbde;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 7px;
+  float: right;
+  margin-left: 45px;
+  cursor: pointer;
+}
+
+input#iCancelar {
+  background-color: #ababab;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 7px;
+  float: right;
+  cursor: pointer;
+}
+
+.pRequisito {
+  display: inline-block;
+  font-size: 13px;
+  font-style: oblique;
+  font-weight: 100;
+  color: #8a2525;
+  width: 360px;
+  height: 60px;
+  visibility: hidden;
+}
+
+.pRequisito2 {
+  font-size: 13px;
+  font-style: oblique;
+  font-weight: 100;
+  color: #8a2525;
+  width: 360px;
+}
+
+.pRequisito::before {
+  display: none;
+}
+
+#reqTelFijo,
+#reqNumCel,
+#reqDirMail {
+  display: none;
+}
+
+#reqNumCel ul {
+  width: 290px;
+  margin: 0;
+  margin-left: 33px;
+}
+
+#reqNumCel ul li {
+  font-size: 14px;
+  padding: 3px 0;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#grupo_compras {
+  visibility: hidden;
+}
+
+#tr3 td {
+  width: 394.78px;
+}
+
+tr#tr3 {
+  height: 142.33px;
+}
+
+#grupo_cantidadProductos,
+#grupo_precioProductos {
+  display: none;
+}
+
+#seleccionCompra {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+#seleccionCompra input {
+  margin: 20px 0px;
+  height: 12px;
+  width: 45px;
+  box-shadow: none;
+}
+
+.mensajeAlentador {
+  color: #2ca25b;
+  font-size: 15px;
+  font-family: fantasy;
+  font-weight: 100;
+}
+
+#exitoDelFormulario {
+  height: 50px;
+  background-color: #52f14b5e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #4bff43;
+  display: none;
+}
+
+#exitoDelFormulario p {
+  padding: 0;
+  padding-top: 13px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #797676;
+  font-family: monospace;
+}
+
+#fracasoDelFormulario {
+  height: 50px;
+  background-color: #f14b4b5e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff5043;
+  display: none;
+}
+
+
+#fracasoDelFormulario p {
+  padding: 0;
+  padding-top: 13px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #797676;
+  font-family: monospace;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formularioGrupo {
+  position: relative;
+}
+
+.formulario__validacion-estado {
+  right: 15px;
+  position: absolute;
+  top: 46px;
+  visibility: hidden;
+}
+
+#tablaFormulario .formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+  visibility: visible;
+}
+
+#tablaFormulario .formulario__grupo-incorrecto .formulario__validacion-estado {
+  color: #bb2929;
+  /* opacity: 1; */
+  visibility: visible;
+}
+
+#tablaFormulario .formulario__grupo-incorrecto .formulario__input {
+  border: 1px solid #bb2929;
+}

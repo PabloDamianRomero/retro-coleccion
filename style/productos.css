@@ -1,0 +1,141 @@
+/*  
+    Autor: Pablo Damian Romero
+    Legajo: FAI-1652 
+*/
+
+#pagProductos{
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#menuProductos{
+    height: 115px;
+    background-color: #6fccb2;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#botones{
+    display: inline-block;
+    width: 190px;
+    background-color: #5bb199;
+    padding: 0 10px;
+}
+
+#botones button{
+    display: block;
+    height: 45px;
+    width: inherit;
+    background-color: #ffffff59;
+    border: none;
+    cursor: pointer;
+    margin: 8.3px 0;
+    font-family: verdana;
+    font-size: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px #00000073;
+}
+
+#iComprar:hover {
+    background-color: #60bbde;
+    transition: all 0.5s ease;
+}
+
+#iNoComprar:hover {
+    background-color: #de6060;
+    transition: all 0.5s ease;
+}
+
+#resultadoCompra{
+    width: 729px;
+    top: 10px;
+    left: 220px;
+    height: 95px;
+    background-color: #fff6;
+    display: inline-block;
+    position: absolute;
+}
+
+#iProductosComprados{
+    resize: none;
+    padding-left: 10px;
+    padding-top: 7px;
+    position: absolute;
+    top: 3px;
+}
+
+#precioTotal{
+    width: 160px;
+    height: 93px;
+    background-color: #cfeffb;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#precioTotal p{
+    margin: 12px auto;
+    width: fit-content;
+    font-size: 20px;
+    padding: 0;
+    font-style: italic;
+    font-weight: 500;
+    color: rgb(68 96 158);
+    text-shadow: 0 0 6px #d9d9d9;
+}
+
+#items{
+    margin-left: 100px;
+}
+
+.prod{
+    box-shadow: 0 0 4px #000000c9;
+}
+
+.prod:hover{
+    box-shadow: 0 0 10px #009688;
+}
+
+#items .marcaYModeloItem p {
+    font-size: 15px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    padding: 0;
+}
+
+#items .datosItem p {
+    font-size: 15px;
+    margin: 0 9px;
+    display: inline;
+    padding: 0;
+}
+
+#items .prod .idItem p{
+    margin: 0;
+    padding: 0;
+}
+
+.datosItem {
+    padding: 0 14px;
+}
+
+.botonCompra {
+    position: relative;
+    margin-top: 20px;
+}
+
+.botonCompra button{
+    position: absolute;
+    right: 7px;
+    bottom: -25px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #0000003b;
+    float: right;
+    cursor: pointer;
+}
